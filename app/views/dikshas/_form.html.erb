@@ -1,0 +1,17 @@
+<%= form_for(@diksha) do |f| %>
+  <% if @diksha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diksha.errors.count, "error") %> prohibited this diksha from being saved:</h2>
+
+      <ul>
+      <% @diksha.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

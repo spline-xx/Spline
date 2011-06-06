@@ -1,0 +1,22 @@
+<h1>Listing dikshas</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dikshas.each do |diksha| %>
+  <tr>
+    <td><%= link_to 'Show', diksha %></td>
+    <td><%= link_to 'Edit', edit_diksha_path(diksha) %></td>
+    <td><%= link_to 'Destroy', diksha, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Showqwqw',new_fn_diksha_path %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Diksha', new_diksha_path %>

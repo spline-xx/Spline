@@ -1,0 +1,11 @@
+	<!--Displays the topics-->
+
+	<%= @post1.each do |post1|%>
+
+
+  <input type="button" value= "<%= post1.title %>" onclick="change('<%=post1.name%>','<%=post1.id%>')"/>
+<!--Deletes the given record from the table-->
+<%= link_to 'Destroy', post1, :confirm => 'Are you sure?', :method => :delete %>
+<br />
+<% end %>
+

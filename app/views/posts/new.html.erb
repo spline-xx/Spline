@@ -1,0 +1,72 @@
+<body>
+<!-- Creating for for the user to enter his/her desired anme of the bookmark. The time is fetched from the backend.All the user has to do is Click on Add Bookmark-->
+
+
+<!-- Fetching the flow Player from the respective URL -->
+<a
+			 href="/Randy_Pausch.flv"
+			 style="display:block;width:370px;height:400px"
+			 id="player" >
+		</a>
+
+		<!-- this will install flowplayer inside previous A- tag. -->
+	<input type="button" onclick="chane()"  value="AddBookmark"/><br />
+
+		<script>
+
+var j=0;
+			var player=flowplayer("player", "../swf/flowplayer-3.2.7.swf",{clip: {
+			autoPlay:false,
+			autoBuffering:true,
+			start:5,
+
+
+		onStart: function doS(j) {
+			//alert("onStart defined in configuration");
+
+  //flowplayer().seek(3500);
+  document.getElementById('abcd').value="da" +j;
+  j=j+1;
+  setInterval('doS(1)','1000');
+
+	//	document.getElementById("person_first_name").value =player.getTime();
+		}
+
+
+
+	}
+	});
+	function chane(){
+document.getElementById("person_first_name").value =player.getTime();
+  player.pause();
+}
+
+	function change(a,j){
+	player.seek(a);
+	var x="";
+
+ 				x=x+"/images/pausch/img"+(j-1)+".gif";
+
+ 			document.getElementById('imageSource').src=x;
+
+}
+
+
+
+	</script>
+	<form action="/new" class="new_person" id="new_person" method="post">
+  <div style="margin:0;padding:0;display:inline">
+    <input name="authenticity_token" type="hidden" value="NrOp5bsjoLRuK8IW5+dQEYjKGUJDe7TQoZVvq95Wteg=" />
+  </div>
+  <!-- Creating the attributes of the form -->
+  <label for="person_first_name">Time</label>:&nbsp
+  <input id="person_first_name" name="post[name]" size="30" type="text"/><br />
+
+  <label for="person_last_name">Topic</label>:
+  <input id="person_last_name" name="post[title]" size="30" type="text" /><br />
+
+  <input id="person_submit" name="commit" type="submit" value="Create BookMark" />
+</form>
+	<input type="button" id="abcd"   value="123"/>
+	</body>
+

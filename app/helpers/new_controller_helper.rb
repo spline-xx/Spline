@@ -1,0 +1,2 @@
+module NewControllerHelper
+end
