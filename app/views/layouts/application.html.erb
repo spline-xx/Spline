@@ -38,7 +38,7 @@
 		<!-- Creating 2 buttons- Home and Video. On click of Video, @ addtional options appear-ADD BOOKMARK and SHOW BOOKMARK and 					another Div tag opens up which shall act as the panel for the video ------------------->
 		  	    <li><button style="border:0;background:none;padding:0;margin:0; color:gray; font-weight:bold; font-size:16px" onclick="hide0()">Home</button></li>
 		  	    <li><button style="border:0;background:none;padding:0;margin:0; color:gray;font-weight:bold; font-size:16px" onclick="hide1()">Video</button>
-		  	    	<ul id="new"   style="display:none;" >
+		  	    	<ul id="new"   style="display:block;" >
 		            		<li><button style="border:0;background:none;padding:0;margin:0;color:gray;" onclick="hide2()">Add Bookmark</button>
 		            		<!-- Hidden Box for Panel to contain Video evoked on click of Video Button linking it to Flow Player----------->
 			 		<div class="hidden" id="leftmenu" style="position:fixed;top:145px;right:5px;margin-		        left:200px;float:right;width:300px;height:300px;border:1px #ba0202;"><%= render 'posts/show' %></div>
@@ -53,7 +53,7 @@
 		</ul>
 		</div>
 				<!--<div class="hidden" id="new"   style="display:none;float:right;">-->
-				<div  id="new1" style="display:none;position:fixed;top:100px;right:500px;width:600px;border:1px #ba0202;">	<%= yield %>
+				<div  id="new1" style="display:block;position:fixed;top:100px;right:500px;width:600px;border:1px #ba0202;">	<%= yield %>
 				<div >
 <!---->
 
@@ -78,7 +78,7 @@
 
 <!-- DIV tag for containing the welcome text on the Screen Image -->
 		<div class="shadow">
-		<div id="content" style="width:800px;height:300px;float:left;border:1px solid #ba0202;padding:0;margin-left:30px;">&#160;&#160;&#160;
+		<div id="content" style="display:none;width:800px;height:300px;float:left;border:1px solid #ba0202;padding:0;margin-left:30px;">&#160;&#160;&#160;
 
 			<h1 align="center" >Welcome to DNS Player</h1>
 			<p align="left">A one-stop solution for playing youtube videos on the Net!! As you will see, the procedure is very simple.All you need to do is past the URL of the desired video and leave the rest to us. You also have the feature of bookmarking certain part's of the video and then later playing the video from those specific parts itself.Sounds good? Well click on the Video Link in the Menu on the left and proceed.</p><br><br><p align="center">Thanks for visiting!!</p>
@@ -90,7 +90,7 @@
 		<input type="button" value="Url" onclick="Url()" />
 		<iframe width="560" height="349" frameborder="0" allowfullscreen id="src1"></iframe></div>
 
-<div id="ppt">
+<div id="ppt" style="display:none">
 
 
 <iframe src="https://docs.google.com/present/view?id=0AUnWV2Qln9zkZGZwMzY0NHhfMGZidm00N2Rm&hl=en_GB" width="500px" height="500px"></iframe>
