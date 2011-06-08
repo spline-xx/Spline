@@ -81,11 +81,13 @@ function pause()
 			{
 			flag=1;
 			document.getElementById("play_pause").value="play";
+			player.pause();
 		}
 			else
 			{
 			flag=0;
 			document.getElementById("play_pause").value="pause";
+			player.play();
 			}
 	
 }
