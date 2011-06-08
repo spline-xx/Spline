@@ -1,0 +1,280 @@
+<html>
+</head>
+<title>Spline</title>
+ <!-- /HTML5 TABS CODE -->
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+            // Fast and dirty
+            $('article.tabs section > h3').click(function(){
+                $('article.tabs section').removeClass('current');
+                $(this)
+                .closest('section').addClass('current');
+            });
+        });
+    </script>
+	<script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-6539535-1");
+            pageTracker._trackPageview();
+        } catch(err) {}</script>
+    <!--LiveInternet counter--><script type="text/javascript"><!--
+        new Image().src = "http://counter.yadro.ru/hit?r"+
+            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";h"+escape(document.title.substring(0,80))+
+            ";"+Math.random();//--></script><!--/LiveInternet-->
+		
+<style>
+ .menu {
+	padding:0;
+	margin:0;
+	width:513px;
+	height:39px;
+	float:right;
+	background:url(menu_bg.gif) top no-repeat;
+}
+.menu ul {
+	text-align:center;
+	padding:0;
+	margin:0;
+	list-style:none;
+	border:0;
+}
+ .menu ul li {
+	margin:0;
+	padding:5px 0 0 30px;
+	border:0;
+	float:left;
+}
+ .menu ul li a {
+	float:left;
+	margin:0;
+	padding:5px 15px;
+	color:#fff;
+	font:normal 14px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+ .menu ul li a:hover {
+	color:#d6d9db;
+}
+ .menu ul li a.active {
+	color:#d6d9db;
+}
+
+ .tabs {
+            height: 1000px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            display: block;
+	    top:50px;	
+        }
+ .tabs section {
+            float: left;
+            z-index: 1;
+        }
+ .tabs section h3 {
+            margin: 0 1px 0 0;
+            background: #d9d9d9;
+            padding: 3px 10px;
+            font: bold 12px Arial;
+            -moz-border-radius: 5px 5px 0 0;
+            cursor: hand;
+            cursor: pointer;
+        }
+
+ .tabs section.current h3 { background: #eee; cursor: default; }
+
+ .tabs section div {
+            position: absolute;
+            left: 0;
+            z-index: 2;
+            width: 200px;
+            height: 100px;
+            border:1px solid #F3F3F3;
+            display: none;
+            padding: 0 10px;
+            font: 12px Arial;
+        }
+ .tabs section.current div { display: block; }
+.footer{
+		margin:0;
+		position:fixed;
+		bottom:0px;
+		padding:0px 0px;
+		width:auto;
+		height:46px;
+		background:#dce6eb;
+		border-top:6px solid #d2dfe5;
+		}
+
+.footer_left{
+float:left;
+}
+
+.footer_left p{
+font-size:13px;
+}
+
+</style>
+<!--<style type="text/css">
+
+html, body {height:100%; margin:0; padding:0;}
+
+#page-background {position:fixed; top:0; left:0; width:100%; height:100%;}
+
+#content {position:relative; z-index:1; padding:10px;}
+ 
+html {overflow-y:hidden;}
+body {overflow-y:auto;}
+#page-background {position:absolute; z-index:-1;}
+#content {position:static;padding:10px;}
+</style> -->
+</head>
+<body background="spline-bcgend.jpg" style="background-repeat:repeat-x;width:100%;height:100%;">
+
+ 	<div class="menu">
+        	<ul>
+        	  <li><a href="index.html" class="active">Home</a></li>
+        	  <li><a href="services.html">Services</a></li>
+        	  <li><a href="about.html">About Us</a></li>
+        	  <li><a href="contact.html">Contact Us</a></li>
+        	</ul>
+      	</div>
+
+<input type='image' src='play.png' style="width:60;height:60;" />
+
+    <!-- HTML5 TABS CODE -->
+    <article style="position:relative;top:120px;" class="tabs">
+        <section>
+            <h3>Contents</h3>
+<div id="new3" style="overflow:auto;width:260px;height:300px;padding:10px;">
+<table style="overflow:auto;cell-padding:10px;margin-right:5px;width:250px;font-family:arial;background-color:white;font-size:10pt;color:blue;text-decoration:underline; ">
+<tr><td  onMouseOver="imageS(1)" >Introduction</td></tr>
+<tr><td style="margin-left:100px;background-color:#F3F3F3;" onMouseOver="imageS(2)">The elephant in the room</td></tr>
+<tr><td  onMouseOver="imageS(3)">I am not in denial</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(4)">What we are not talking about</td></tr>
+<tr><td  onMouseOver="imageS(5)">Today’s Talk</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(6)">My Childhood Dreams</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(7)">Image 1</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(8)">Image 2</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(9)">Image 3</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(10)">Image 4</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(11)">Image 5</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(12)"">Image 6 </td></tr>
+<tr><td  onMouseOver="imageS(13)">My Childhood Dreams-The List</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(14)">i)Being in zero gravity</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(15)">Image</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(16)">The vomit comet</td></tr>
+<tr><td style="text-align:center;margin-left:20px;" onMouseOver="imageS(17)">Brick walls are there for a reason</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(18)">Image 1</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(19)">Image 2</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(20)">ii)Making it to NFL-Football</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(21)" >I Never Made it to the NFL</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(22)">iii)Being an author in the World Book Encyclopedia</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(23)">Image 1</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(24)">Image 2</td></tr>
+<tr><td  onMouseOver="imageS(25)">iv)Meeting Captain Kirk</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(26)">Dream</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(27)">Image 1</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(28)">Image 2</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(29)">Image 3</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(30)">Image 4</td></tr>
+<tr><td  onMouseOver="imageS(31)">v)Winning STuffed Toys</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(32)">Image 1</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(34)">Image 2</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(35)">Image 3</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(36)">Image 4</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(37)">Image 5</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(38)">Image 6</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(39)">I can hear the cynics</td></tr>
+<tr><td  onMouseOver="imageS(40)">vi)Being an Imagineer</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(41)">Image 1</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(42)">Image 2</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(43)">Image 3</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(44)">Image 4</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(45)">1991:VR on Five Dollars a Day</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(46)">Imagineering</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(47)">Image</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(48)">Introduction</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(49)">Jon Snoddy</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(50)">Image 1</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(51)">Image 2</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(52)">Alladin Image</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(53)">Image 1</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(54)">Image 2</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(55)">Image 3</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(56)">Image 4</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(57)">Charlie and the Chocolate Factory</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(58)">Working on Aladdin VR</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(59)">Really being an Imagineer</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(60)">Image</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(61)">Virtual Jungle Cruise</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(62)">Image</td></tr>
+<tr><td style="background-color:#F3F3F3;" onMouseOver="imageS(63)">Enabling the Childhood Dreams of Others</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(64)">Image 1</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(65)">Image 2</td></tr>
+<tr><td  onMouseOver="imageS(66)">Building Virtual Worlds</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(67)">The First Year</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(68)">Campus-wide Exhibition</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(69)">Image 1</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(70)">Image 3</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(71)">Image 4</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(72)">Image 5</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(73)">Image 6</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(74)">Image 7</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(75)">Image 8</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(76)">Image 9</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(77)">Image 10</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(78)">Image 11</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(79)">Image 12</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(80)">Image 13</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(81)">Image 14</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(82)">Image 15</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(83)">Image 16</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(84)">BVW was a pioneering course</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(85)">Image</td></tr>
+<tr><td  onMouseOver="imageS(86)">The Dream Fulfillment Factory</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(87)">Entertainment Technology Center (ETC)</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(88)">Right Brain / Left Brain</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(89)">Don & I shared an office for six years</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(90)">Co-Director Credit for the ETC is Success</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(91)">The ETC is to masters degrees as Cirque Du Soleil is to circus</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(92)">ETC Curriculum: First Draft</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(93)">ETC Curriculum</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(94)">Key to the ETC is Success: Freedom</td></tr>
+<tr><td style="background-color:#F3F3F3;text-align:center;" onMouseOver="imageS(95)">Edutainment</td></tr>
+<tr><td style="text-align:center" onMouseOver="imageS(96)">Companies guaranteed hiring our students</td></tr>
+</table>
+</div>
+  
+
+        </section>
+        <section class="current">
+            <h3>Glossary</h3>
+            <div>
+                <p>A info tab content1</p>
+                <p>A info tab content2</p>
+            </div>
+        </section>
+       
+    </article>
+<!-- ............... FOOTER ................................... --> 
+<div class="footer">
+  <div class="container_16">
+    <div class="footer_left">
+      <p> &copy; Copyright 2011 All Rights Reserved by <a href="#">Spline</a></p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

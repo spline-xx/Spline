@@ -8,6 +8,9 @@
 			 style="display:block;width:370px;height:400px"
 			 id="player" >
 		</a>
+<!-- ><a class="player" id="live">
+	<img src="http://static.flowplayer.org/img/player/btn/showme.png"  />
+</a> -->
 
 		<!-- this will install flowplayer inside previous A- tag. -->
 	<input type="button" onclick="chane()"  value="AddBookmark"/><br />
@@ -19,7 +22,27 @@ var j=0;
 			autoPlay:false,
 			autoBuffering:true,
 			start:5,
+/*
+var player=flowplayer("live", "../swf/flowplayer-3.2.7.swf",{clip: {
+		url: 'myContent',
+		live: true,
+		// configure clip to use influxis as our provider, it uses our rtmp plugin
+		provider: 'influxis'
+	},
 
+	// streaming plugins are configured under the plugins node
+	plugins: {
+
+		// here is our rtpm plugin configuration
+		influxis: {
+			url: 'flowplayer.rtmp-3.2.3.swf',
+
+			// netConnectionUrl defines where the streams are found
+			netConnectionUrl: 'rtmp://perweb.tv:1935/live'
+		}
+	}
+});
+*/
 
 		onStart: function doS(j) {
 			//alert("onStart defined in configuration");
@@ -40,6 +63,7 @@ var j=0;
 document.getElementById("person_first_name").value =player.getTime();
   player.pause();
 }
+ 
 
 	function change(a,j){
 	player.seek(a);

@@ -62,7 +62,11 @@
  				x=x+"/images/pausch/img"+(j-1)+".gif";
 
  			document.getElementById('imageSource').src=x;
-
+	
 
  		};
+ 		var i=1;
 
+window.setInterval(function(){
+	imageS(i);
+}, 1000);

@@ -1,6 +1,8 @@
+
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
+ 
   def index
     @posts = Post.all
 
@@ -14,7 +16,6 @@ class PostsController < ApplicationController
   # GET /posts/1.xml
   def show
     @post = Post.find(:all)
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @post }
@@ -36,6 +37,7 @@ class PostsController < ApplicationController
       format.xml  { render :xml => @post }
       format.xml  { render :xml => @post1 }
     end
+   
   end
 
   # GET /posts/1/edit
@@ -89,4 +91,5 @@ class PostsController < ApplicationController
     end
   end
 end
+
 

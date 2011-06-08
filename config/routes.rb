@@ -1,6 +1,4 @@
 RubySpline::Application.routes.draw do
-  resources :dikshas
-
   resources :posts
 
   get "home/index"
