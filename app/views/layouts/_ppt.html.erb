@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <head>
                 <!--<script type="text/javascript" src="swfobject.js"></script> -->   
+=======
+
+                <script type="text/javascript" src="swfobject.js"></script>    
+>>>>>>> upstream/master
                 <script type="text/javascript">
                         var flashMovie;
 
@@ -31,12 +36,16 @@
                                 document.getElementById("slidenumber").value = flashMovie.getCurrentSlide();
                         }
                 </script>
+<<<<<<< HEAD
 </head>
                 <body onload="loadPlayer();">
                 <div id="player">
                         You need Flash player 8+ and JavaScript enabled to view this video.
                 </div>
         <div style="position:fixed;top:100px;right:320px;width:360px;border:1px #ba0202">
+=======
+        <div style="position:fixed;top:100px;right:320px;width:360px;border:1px #ba0202" onload="loadPlayer();">
+>>>>>>> upstream/master
 
                        <button onclick="flashMovie.first();updateSlideNumber();" type="button" value="First">First</button>
                        <button onclick="flashMovie.previous();updateSlideNumber();" type="button" value="Previous">Previous</button>
@@ -44,5 +53,10 @@
                        <input type="text" id="slidenumber" size="2" value="1" onkeydown="if (event.keyCode == 13) { jumpTo(); }"/>
                        <button onclick="flashMovie.next();updateSlideNumber();" type="button" value="Next">Next</button>
                        <button onclick="flashMovie.last();updateSlideNumber();" type="button" value="Last">Last</button>
+<<<<<<< HEAD
       </div>      
 </body>
+=======
+            
+</div>
+>>>>>>> upstream/master
