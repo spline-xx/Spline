@@ -65,8 +65,28 @@
 	
 
  		};
- 		var i=1;
+ 		var i=55;
+ 		var flag=0;
 
 window.setInterval(function(){
-	imageS(i);
-}, 1000);
+	document.getElementById("url1").value=document.getElementById("pointer").style.left;
+	if(flag==0)
+	i=i+5;
+	document.getElementById("pointer").style.left=i+"px";
+}, 500);
+
+function pause()
+{
+			if(flag==0)
+			{
+			flag=1;
+			document.getElementById("play_pause").value="play";
+		}
+			else
+			{
+			flag=0;
+			document.getElementById("play_pause").value="pause";
+			}
+	
+}
+
