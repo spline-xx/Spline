@@ -1,4 +1,5 @@
 
+
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
@@ -37,6 +38,7 @@ class PostsController < ApplicationController
       format.xml  { render :xml => @post }
       format.xml  { render :xml => @post1 }
     end
+   
    
   end
 
